@@ -10,13 +10,13 @@
 .notice {
     padding: 10px 30px;
     width: 100%;
-    background: #f3f3f3;
+    background: #aabfd5;
     display: flex;
     align-items: flex-start;
 }
 
 .notice .icon {
-    color: #726a4c;
+    color: #77787c;
     font-size: 32px;
     margin-right: 10px;
     margin-top: 8px;
@@ -29,7 +29,7 @@
 
 .notice .text{
     flex: 1;
-    color: #161711;
+    color: #77787c;
     /* margin-top: 8px; */
     font-size: 14px;
     font-weight: 400;
@@ -44,12 +44,12 @@
 .main-header .container .logo {
     font-size: 30px;
     font-weight: 500;
-    color: #364b34;
+    color: #2b648e;
     cursor: pointer;
 }
 
 .main-header .container .logo:hover {
-    color: #3d1922;
+    color: #79879a;
 }
 
 .main-header .container {
@@ -66,7 +66,7 @@
     padding: 10px 30px;
     border: 3px solid #ddd;
     width: 300px;
-    color: #161711;
+    color: #77787c;
     border-radius: 4px;
 }
 
@@ -76,13 +76,13 @@
     padding: 10px 20px;
     cursor: pointer;
     background: #ddd;
-    color: #161711;
+    color: #77787c;
     border-radius: 4px;
 }
 
 .main-header .container .search-box button:hover {
-    background: #f3f3f3;
-    color: #726a4c;
+    background: #e4e9ee;
+    color: #77787c;
 }
 
 .main-header .container .icon {
@@ -98,12 +98,12 @@
 .main-header .container .icon .account .user-icon {
     margin-right: 10px;
     font-size: 20px;
-    color: #161711;
+    color: #a7e0e9;
     cursor: pointer;
 }
 
 .main-header .container .icon .account .user-icon:hover {
-    color: #ac937a;
+    color: #77787c;
 }
 
 .main-header .container .icon .account p {
@@ -119,11 +119,11 @@
     margin-right: 8px;
     font-size: 22px;
     cursor: pointer;
-    color: #161711;
+    color: #a7e0e9;
 }
 
 .main-header .container .icon .second-icon .link:hover {
-    color: #ac937a;
+    color: #77787c;
 }
 
 .header {
@@ -149,12 +149,12 @@
 
 .header .container .nav ul li .link {
     text-decoration: none;
-    color: #161711;
+    color: #a7e0e9;
     transition: 0.5s;
 }
 
 .header .container .nav ul li .link:hover {
-    color: #ac937a;
+    color: #77787c;
 }
 
 .header .container .auth {
@@ -170,8 +170,9 @@
     outline: none;
     border: none;
     background: none;
+    color: #a7e0e9;
 }
 
 .header .container .auth button:hover {
-    color: #ac937a;
+    color: #77787c;
 }

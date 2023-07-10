@@ -7,4 +7,111 @@
 
 .top-banner {
     padding: 30px 40px;
+    width: 100%;
+    background: #c1c1c1;
+}
+
+.top-banner .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-banner .container .detail {
+    margin-top: 10%;
+    margin-left: 30px;
+}
+
+.top-banner .container .detail h2 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #ededed;
+    margin-right: 50%;
+    margin-bottom: 40px
+}
+
+.top-banner .container .detail .link {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ededed;
+    background: #444;
+}
+
+.top-banner .container .detail .link:hover {
+    background: #d5d6d1;
+    color: #14150f;
+}
+
+.top-banner .container .img_box {
+    flex-grow: 1;
+}
+
+.top-banner .container .img_box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-type {
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.product-type .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; */
+}
+
+.product-type .container .box {
+    padding: 10px 20px;
+    /* margin-left: 10px; */
+    margin-bottom: 20px;
+    flex-basis: 33.33%;
+    /* flex-direction: column; */
+    box-sizing: border-box;
+}
+
+.product-type .container .box .img-box {
+   width: 100%;
+   height: 0;
+   padding-bottom: 100%;
+   border-radius: 30%;
+   position: relative;
+   background: #d5d6d1;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.product-type .container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.product-type .container .box .img-box:hover img {
+    transform: scale(1.2);
+}
+
+.product-type .container .box .detail {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.product-type .container .box .detail p {
+    margin-top: 20px;
+    color: #77787c;
 }
