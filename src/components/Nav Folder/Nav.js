@@ -16,7 +16,7 @@ const Nav = () => {
         <div className='icon'>
         <FaTruckMoving />
         </div>
-        <span className='text'> Shipping is FREE on purchases up to #80,000.</span>
+        <span className='text'> Shipping is FREE on purchases up to $1000.</span>
       </p>
     </div>
 

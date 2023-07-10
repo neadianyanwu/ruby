@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsArrowRight} from 'react-icons/bs';
+import { FiTruck } from 'react-icons/fi';
 import './Home.css';
 
 const Home = () => {
@@ -65,6 +66,15 @@ const Home = () => {
           </div>
           <div className='detail'>
             <p>50 products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className='about'>
+      <div className='container'>
+        <div className='box'>
+          <div className='icon'>
+            <FiTruck />
           </div>
         </div>
       </div>
