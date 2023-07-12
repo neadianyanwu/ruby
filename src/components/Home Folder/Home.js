@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsArrowRight} from 'react-icons/bs';
 import { FiTruck } from 'react-icons/fi';
+import { BiDollar } from 'react-icons/bi';
+import { TbFilePercent } from 'react-icons/tb';
+import { FiHeadphones } from 'react-icons/fi'
+import { BsCart3 } from 'react-icons/bs';
+import{ AiOutlineEye, AiOutlineHeart } from 'react-icons/ai';
+import Homeproducts from './HomeProducts';
 import './Home.css';
 
 const Home = () => {
@@ -30,7 +36,7 @@ const Home = () => {
         </div>
         <div className='box'>
           <div className='img-box'>
-            <img src='./img/airpod.jfif' alt='headset' />
+            <img src='./img/headphone.jpg' alt='headset' />
           </div>
           <div className='detail'>
             <p>23 products</p>
@@ -38,7 +44,7 @@ const Home = () => {
         </div>
         <div className='box'>
           <div className='img-box'>
-            <img src='./img/xdr.jfif' alt='desktop' />
+            <img src='./img/dsk.jpg' alt='desktop' />
           </div>
           <div className='detail'>
             <p>18 products</p>
@@ -76,7 +82,60 @@ const Home = () => {
           <div className='icon'>
             <FiTruck />
           </div>
+          <div className='detail'>
+            <h3>Free Shipping</h3>
+            <p>Order above $1000</p>
+          </div>
         </div>
+        <div className='box'>
+          <div className='icon'>
+            <BiDollar />
+          </div>
+          <div className='detail'>
+            <h3>Return & Refund</h3>
+            <p>Guarantee of Refund</p>
+          </div>
+        </div>
+        <div className='box'>
+          <div className='icon'>
+            <TbFilePercent/>
+          </div>
+          <div className='detail'>
+            <h3>Member Discount</h3>
+            <p>On every order</p>
+          </div>
+        </div>
+        <div className='box'>
+          <div className='icon'>
+            <FiHeadphones />
+          </div>
+          <div className='detail'>
+            <h3>Customer Support</h3>
+            <p>Request Assistance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='product'>
+      <h2>Top Products</h2>
+      <div class='container'>
+        {Homeproducts.map((curElm) => {
+          return (
+            <div class='box' key={curElm.id}>
+              <img src={curElm.Img} alt={curElm.Title} className='product-img' />
+              <div className='icon'>
+                <BsCart3 />
+                <AiOutlineEye />
+                <AiOutlineHeart />
+              </div>
+              <div className='detail'>
+                <p>{curElm.Cat}</p>
+                <h3>{curElm.Title}</h3>
+                <h4>{curElm.Price}</h4>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
     </>
