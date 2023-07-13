@@ -1,10 +1,10 @@
 const Homeproducts = [
 {
     id: 1,
-    Title: "Google Pixel Fold – 5G Android Phone-256GB / 512GB",
-    Cat: "Google Pixel Fold",
-    Price: "$1,799",
-    Img: "./img/pixelfold.webp"
+    Title: "Apple iPhone 14 Pro Max 5G, Silver - Canadian Version - 256GB",
+    Cat: "Apple iPhone 14 Pro Max ",
+    Price: "$1,283.00",
+    Img: "./img/pro.jpg"
 },
 
 {
@@ -20,7 +20,7 @@ const Homeproducts = [
     Title: "Iphone Wireless Charging Power Bank",
     Cat: "Wireless Charger",
     Price: "$25.36",
-    Img: "./img/ch.jpg"
+    Img: "./img/ipc.jpg"
 },
 
 {
@@ -33,10 +33,10 @@ const Homeproducts = [
 
 {
     id: 5,
-    Title: "Generic Executive Celieng Chandelier Light",
+    Title: "vidaXL Chandelier with Beads Ceiling Light Crystal Chandelier Pendant Light Pendant Lamp",
     Cat: "Chandelier Light",
-    Price: "$238.40",
-    Img: "./img/chandelier.jpg"
+    Price: "$162.99",
+    Img: "./img/chan.jpg"
 },
 
 {
@@ -65,7 +65,7 @@ const Homeproducts = [
 
 {
     id: 9,
-    Title: "Samsung Galaxy S23 Ultra 12GB RAM-512ROM-Dual Sim- 5000mAh- Black",
+    Title: "Samsung Galaxy S23 Ultra 12GB RAM-512ROM-Dual Sim",
     Cat: "Samsung Galaxy S23 Ultra",
     Price: "$1141.31",
     Img: "./img/ultra.jfif"
@@ -73,10 +73,10 @@ const Homeproducts = [
 
 {
     id: 10,
-    Title: "Large Tufted Living Room Chair",
+    Title: "Le Nuvole Sofa",
     Cat: "Living Room Chair",
-    Price: "$500.79 ",
-    Img: "./img/chair.jpg"
+    Price: "$7,219.29 ",
+    Img: "./img/sofa.jpg"
 },
 ]
 export default Homeproducts;

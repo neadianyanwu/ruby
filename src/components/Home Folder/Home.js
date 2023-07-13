@@ -20,7 +20,7 @@ const Home = () => {
           <Link to='/product' className='link'>Shop Now <BsArrowRight /></Link>
           </div>
           <div className='img_box'>
-            <img src='./img/tag.jfif' alt='bannerimg' />
+            <img src='./img/s23.jfif' alt='bannerimg' />
           </div>
       </div>
     </div>
@@ -28,7 +28,7 @@ const Home = () => {
       <div className='container'>
         <div className='box'>
           <div className='img-box'>
-            <img src='./img/s23.jfif' alt='mobile-phone' />
+            <img src='./img/pixel7pro.jpg' alt='mobile-phone' />
           </div>
           <div className='detail'>
             <p>20 products</p>
@@ -122,11 +122,13 @@ const Home = () => {
         {Homeproducts.map((curElm) => {
           return (
             <div class='box' key={curElm.id}>
-              <img src={curElm.Img} alt={curElm.Title} className='product-img' />
-              <div className='icon'>
-                <BsCart3 />
-                <AiOutlineEye />
-                <AiOutlineHeart />
+              <div className='img-box'>
+                <img src={curElm.Img} alt={curElm.Title} className='product-img' />
+                <div className='icon'>
+                  <li> <BsCart3 /> </li>
+                  <li> <AiOutlineEye /> </li>
+                  <li> <AiOutlineHeart /> </li>
+                </div>
               </div>
               <div className='detail'>
                 <p>{curElm.Cat}</p>
@@ -136,6 +138,16 @@ const Home = () => {
             </div>
           );
         })}
+      </div>
+    </div>
+    <div className='banner'>
+      <div className='detail'>
+        <h4>Latest Technology Added</h4>
+        <h3>Samsung Galaxy Z Fold4 5G Mobile Phone Sim Free Android Folding Smartphone 512GB</h3>
+        <p><BiDollar />1556.91</p>
+      </div>
+      <div className='img-box'>
+        <img src='./img/s23.jfif' alt='mobilephone'/>
       </div>
     </div>
     </>
