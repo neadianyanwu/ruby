@@ -4,7 +4,7 @@ const Homeproducts = [
     Title: "Apple iPhone 14 Pro Max 5G, Silver - Canadian Version - 256GB",
     Cat: "Apple iPhone 14 Pro Max ",
     Price: "$1,283.00",
-    Img: "./img/pro.jpg"
+    Img: "./img/pp.jpg"
 },
 
 {

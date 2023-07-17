@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Section: Footer */
+.footer {
+    padding: 30px 40px;
+    width: 100%;
+    background: #e0e0e0;
+}
+
+.footer .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .about {
+    max-width: 30%;
+}
+
+.footer .container .logo span {
+    font-size: 30px;
+    font-weight: 400;
+    color: #2b648e;
+}
+
+.footer .container .about .detail p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3d3d3e;
+}
+
+.footer .container .about .detail .icon {
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer .container .about .detail .icon li {
+    margin-left: 20px;
+    list-style: none;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer .container .about .detail .icon li:hover {
+    background: #cfd3d0;
+    color: #d0aa6e;
+    border-radius: 6px;
+}
+
+.footer .container .account {
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.footer .container .account h3 {
+    font-size: 32px;
+    color: #3d3d3e;
+    font-weight: 500;
+}
+
+.footer .container .account ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.footer .container .account ul li {
+    margin-top: 5px;
+    color: #3d3d3e;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer .container .account ul li:hover {
+    color: #d0aa6e;
+}
+
+.footer .container .page {
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.footer .container .page h3 {
+    font-size: 32px;
+    color: #3d3d3e;
+    font-weight: 500;
+}
+
+.footer .container .page ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.footer .container .page ul li {
+    margin-top: 5px;
+    color: #3d3d3e;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer .container .page ul li:hover {
+    color: #d0aa6e;
+}
