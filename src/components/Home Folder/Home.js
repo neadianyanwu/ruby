@@ -20,7 +20,7 @@ const Home = () => {
           <Link to='/product' className='link'>Shop Now <BsArrowRight /></Link>
           </div>
           <div className='img_box'>
-            <img src='./img/s23.jfif' alt='bannerimg' />
+            <img src='./img/note.png' alt='bannerimg' />
           </div>
       </div>
     </div>
@@ -44,7 +44,7 @@ const Home = () => {
         </div>
         <div className='box'>
           <div className='img-box'>
-            <img src='./img/dsk.jpg' alt='desktop' />
+            <img src='./img/e.jpg' alt='desktop' />
           </div>
           <div className='detail'>
             <p>18 products</p>
@@ -60,7 +60,7 @@ const Home = () => {
         </div>
         <div className='box'>
           <div className='img-box'>
-            <img src='./img/landline.jfif' alt='landline' />
+            <img src='./img/bt.jpg' alt='landline' />
           </div>
           <div className='detail'>
             <p>6 products</p>
@@ -68,7 +68,7 @@ const Home = () => {
         </div>
         <div className='box'>
           <div className='img-box'>
-            <img src='./img/macbook.jfif' alt='laptop' />
+            <img src='./img/pro.jpg' alt='laptop' />
           </div>
           <div className='detail'>
             <p>50 products</p>
@@ -141,13 +141,16 @@ const Home = () => {
       </div>
     </div>
     <div className='banner'>
-      <div className='detail'>
-        <h4>Latest Technology Added</h4>
-        <h3>Samsung Galaxy Z Fold4 5G Mobile Phone Sim Free Android Folding Smartphone 512GB</h3>
-        <p><BiDollar />1556.91</p>
-      </div>
-      <div className='img-box'>
-        <img src='./img/s23.jfif' alt='mobilephone'/>
+      <div className='container'>
+        <div className='detail'>
+          <h4>Latest Technology Added</h4>
+          <h3>Samsung Galaxy Z Fold4 5G Mobile Phone Sim Free Android Folding Smartphone 512GB</h3>
+          <p>$ 1556.91</p>
+          <Link to='/products' className='link'>Shop Now <BsArrowRight /></Link>
+        </div>
+        <div className='img-box'>
+          <img src='./img/note.png' alt='mobilephone'/>
+        </div>
       </div>
     </div>
     </>
