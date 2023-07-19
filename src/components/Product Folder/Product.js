@@ -1,34 +1,38 @@
 import ProductDetails from './ProductDetails';
 import { BsCart3 } from 'react-icons/bs';
 import{ AiOutlineEye, AiOutlineHeart } from 'react-icons/ai';
+import './Product.css';
 import React from 'react'
 
 const Product = () => {
   return (
     <>
-      <h3># Products</h3>
-      <p>Home . Products</p>
+      
       <div className='products'>
+        <h2># Products</h2>
+        <p>Home .Products</p>
         <div className='container'>
           <div className='filter'>
             <div className='categories'>
               <h3>Categories</h3>
               <ul>
-                <li>Apple iPhones</li>
+                <li>iPhones</li>
                 <li>Camera</li>
-                <li>Wireless Charger</li>
-                <li>Gaming Console</li>
-                <li>Chandelier Light</li>
-                <li>Smart Watch</li>
+                <li>Wireless-Charger</li>
+                <li>Gaming</li>
+                <li>Chandelier-Light</li>
+                <li>Smart-Watch</li>
                 <li>Headphone</li>
-                <li>VR Headset</li>
-                <li>Samsung Galaxy</li>
+                <li>VR-Headset</li>
+                <li>Samsung-Galaxy</li>
                 <li>Living Room Chair</li>
+                <li>Laptop-Bag</li>
+                <li>Executive-Desk</li>
               </ul>
             </div>
           </div>
           <div className='productbox'>
-            <div className='container'>
+            <div className='content'>
               {
                 ProductDetails.map((curElm) => {
                   return (

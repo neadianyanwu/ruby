@@ -75,8 +75,24 @@ const ProductDetails =[
         id: 10,
         Title: "Le Nuvole Sofa",
         Cat: "Living Room Chair",
-        Price: "$7,219.29 ",
+        Price: "$7,219.29",
         Img: "./img/sofa.jpg"
+    },
+
+    {
+        id: 11,
+        Title: "Anti Theft Water Resistant Large Capacity, USB Charging Port, Laptop Backpack",
+        Cat: "Laptop Bag",
+        Price: "$10.63",
+        Img: "./img/lpb.jpg"
+    },
+
+    {
+        id: 12,
+        Title: "Deluxe Executive Desk",
+        Cat: "Executive Desk",
+        Price: "$381.49",
+        Img: "./img/exec.jpg"
     },
 
 ]

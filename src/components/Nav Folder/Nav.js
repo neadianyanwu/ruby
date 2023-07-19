@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaTruckMoving } from 'react-icons/fa';
 import { AiOutlineHeart, AiOutlineUser } from 'react-icons/ai';
 import { BsBagCheck } from 'react-icons/bs';
@@ -8,6 +8,7 @@ import './Nav.css';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+  const [search, setSearch] = useState();
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   return (
    <>
@@ -26,7 +27,7 @@ const Nav = () => {
           <span>RUBY</span>
         </div>
         <div className='search-box'>
-          <input type='text' value='' placeholder='Search Your Product...' autoComplete='off'></input>
+          <input type='text' value={search} placeholder='Search Your Product...' autoComplete='off' onChange={(e) => setSearch(e.target.value)}></input>
           <button>Search</button>
         </div>
         <div className='icon'>
