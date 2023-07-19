@@ -2,7 +2,7 @@ const ProductDetails =[
     {
         id: 1,
         Title: "Apple iPhone 14 Pro Max 5G, Silver - Canadian Version - 256GB",
-        Cat: "Apple iPhones",
+        Cat: "iPhones",
         Price: "$1,283.00",
         Img: "./img/pp.jpg"
     },
@@ -18,7 +18,7 @@ const ProductDetails =[
     {
         id: 3,
         Title: "Iphone Wireless Charging Power Bank",
-        Cat: "Wireless Charger",
+        Cat: "Wireless-Charger",
         Price: "$25.36",
         Img: "./img/ipc.jpg"
     },
@@ -26,7 +26,7 @@ const ProductDetails =[
     {
         id: 4,
         Title: "PlayStation 5 Console",
-        Cat: "Gaming Console",
+        Cat: "Gaming",
         Price: "$590.65",
         Img: "./img/playstation.png"
     },
@@ -34,7 +34,7 @@ const ProductDetails =[
     {
         id: 5,
         Title: "vidaXL Chandelier with Beads Ceiling Light Crystal Chandelier Pendant Light Pendant Lamp",
-        Cat: "Chandelier Light",
+        Cat: "Chandelier-Light",
         Price: "$162.99",
         Img: "./img/chan.jpg"
     },
@@ -42,7 +42,7 @@ const ProductDetails =[
     {
         id: 6,
         Title: "Waterproof IP67 Smartwatch Ultra NFC GPS Track 49mm Smart Watches",
-        Cat: "Smart Watch",
+        Cat: "Smart-Watch",
         Price: "$37.72",
         Img: "./img/smartw.jpg"
     },
@@ -58,7 +58,7 @@ const ProductDetails =[
     {
         id: 8,
         Title: "Meta Quest Pro VR Headset",
-        Cat: "VR Headset",
+        Cat: "VR-Headset",
         Price: "$997.00",
         Img: "./img/metaquest.jpg"
     },
@@ -66,7 +66,7 @@ const ProductDetails =[
     {
         id: 9,
         Title: "Samsung Galaxy S23 Ultra 12GB RAM-512ROM-Dual Sim",
-        Cat: "Samsung Galaxy",
+        Cat: "Samsung-Galaxy",
         Price: "$1141.31",
         Img: "./img/ultra.jfif"
     },
@@ -82,7 +82,7 @@ const ProductDetails =[
     {
         id: 11,
         Title: "Anti Theft Water Resistant Large Capacity, USB Charging Port, Laptop Backpack",
-        Cat: "Laptop Bag",
+        Cat: "Laptop-Bag",
         Price: "$10.63",
         Img: "./img/lpb.jpg"
     },
@@ -90,7 +90,7 @@ const ProductDetails =[
     {
         id: 12,
         Title: "Deluxe Executive Desk",
-        Cat: "Executive Desk",
+        Cat: "Executive-Desk",
         Price: "$381.49",
         Img: "./img/exec.jpg"
     },

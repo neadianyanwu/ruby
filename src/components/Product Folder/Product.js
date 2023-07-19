@@ -5,7 +5,18 @@ import './Product.css';
 import React, { useState } from 'react'
 
 const Product = () => {
-  const [product, setProduct] = useState(ProductDetails)
+  const [product, setProduct] = useState(ProductDetails);
+  const filterproduct = (product) => {
+    const update = ProductDetails.filter((x) => {
+      return x.Cat === product;
+    })
+    setProduct(update);
+  }
+
+  const AllProducts = () => {
+    setProduct(ProductDetails)
+  }
+
   return (
     <>
       <div className='products'>
@@ -16,18 +27,19 @@ const Product = () => {
             <div className='categories'>
               <h3>Categories</h3>
               <ul>
+              <li onClick={() => AllProducts ()}>All Products</li>
                 <li onClick={() => filterproduct ("iPhones")}>iPhones</li>
-                <li onClick={() => filterproduct ("iPhones")}>Camera</li>
-                <li onClick={() => filterproduct ("iPhones")}>Wireless-Charger</li>
-                <li onClick={() => filterproduct ("iPhones")}>Gaming</li>
-                <li onClick={() => filterproduct ("iPhones")}>Chandelier-Light</li>
-                <li>Smart-Watch</li>
-                <li>Headphone</li>
-                <li>VR-Headset</li>
-                <li>Samsung-Galaxy</li>
-                <li>Living Room Chair</li>
-                <li>Laptop-Bag</li>
-                <li>Executive-Desk</li>
+                <li onClick={() => filterproduct ("Camera")}>Camera</li>
+                <li onClick={() => filterproduct ("Wireless-Charger")}>Wireless-Charger</li>
+                <li onClick={() => filterproduct ("Gaming")}>Gaming</li>
+                <li onClick={() => filterproduct ("Chandelier-Light")}>Chandelier-Light</li>
+                <li onClick={() => filterproduct ("Smart-Watch")}>Smart-Watch</li>
+                <li onClick={() => filterproduct ("Headphone")}>Headphone</li>
+                <li onClick={() => filterproduct ("VR-Headset")}>VR-Headset</li>
+                <li onClick={() => filterproduct ("Samsung-Galaxy")}>Samsung-Galaxy</li>
+                <li onClick={() => filterproduct ("Living Room Chair")}>Living Room Chair</li>
+                <li onClick={() => filterproduct ("Laptop-bag")}>Laptop-Bag</li>
+                <li onClick={() => filterproduct ("Executive-Desk")}>Executive-Desk</li>
               </ul>
             </div>
           </div>

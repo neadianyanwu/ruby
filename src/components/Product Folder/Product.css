@@ -55,7 +55,7 @@
 }
 
 .products .container .productbox {
-    margin-right: 4%;
+    margin-right: 0%;
 }
 
 .products .container .productbox .content {
@@ -74,6 +74,7 @@
     transition: 0.5s;
     cursor: pointer;
     border-radius: 6px;
+    margin-right: 20px;
 }
 
 .products .container .box:hover {
