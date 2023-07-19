@@ -1,14 +1,14 @@
 import ProductDetails from './ProductDetails';
 import { BsCart3 } from 'react-icons/bs';
-import{ AiOutlineEye, AiOutlineHeart } from 'react-icons/ai';
+import{ AiOutlineEye, AiOutlineHeart, AiOutlineClose } from 'react-icons/ai';
 import './Product.css';
-import React, { useState } from 'react'
+import React from 'react'
 
-const Product = () => {
-  const [product, setProduct] = useState(ProductDetails);
+const Product = ({product, setProduct, detail, view, close, setClose}) => {
+  
   const filterproduct = (product) => {
     const update = ProductDetails.filter((x) => {
-      return x.Cat === product;
+      return x.Cat.toLowerCase() === product.toLowerCase();
     })
     setProduct(update);
   }
@@ -19,6 +19,32 @@ const Product = () => {
 
   return (
     <>
+    { close ? 
+      <div className='product-details'>
+        <div className='container'>
+          <button onClick={() => setClose(false)} className='closebtn'><AiOutlineClose /></button>
+          {
+            detail.map((curElm) => {
+              return (
+                <div className='productbox'>
+                  <div className='img-box'>
+                    <img src={curElm.Img} alt={curElm.Title} className='productimg'/>
+                  </div>
+                  <div className='detail'>
+                    <h4>{curElm.Cat}</h4>
+                    <h2>{curElm.Title}</h2>
+                    <p>Experience the greatness in your hands</p>
+                    <h3>{curElm.Price}</h3>
+                    <button>Add to Cart</button>
+                  </div>
+                </div>
+              )
+            })
+          }
+        </div>
+      </div> : null
+    }
+    
       <div className='products'>
         <h2># Products</h2>
         <p>Home .Products</p>
@@ -54,7 +80,7 @@ const Product = () => {
                           <img src={curElm.Img} alt={curElm.Title} className='product-img' />
                           <div className='icon'>
                             <li> <BsCart3 /> </li>
-                            <li> <AiOutlineEye /> </li>
+                            <li onClick={() => view(curElm)}> <AiOutlineEye /> </li>
                             <li> <AiOutlineHeart /> </li>
                           </div>
                         </div>
